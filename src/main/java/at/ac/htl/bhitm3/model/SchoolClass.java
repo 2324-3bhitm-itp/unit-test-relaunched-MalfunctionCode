@@ -27,7 +27,7 @@ public class SchoolClass {
     public boolean removeStudent(Student s){
         boolean status = true;
 
-        if(!(students.contains(s)) || s == null){
+        if(s == null || !(students.contains(s))){
             status = false;
         }else{
             students.remove(s);
